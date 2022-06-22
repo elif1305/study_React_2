@@ -1,0 +1,117 @@
+////////////////
+   REACT
+///////////////
+
+=>opensource tur.
+=> node.js ders oncesi yuklenmeli.
+=> githuba gonderilirken butun dosyalar gonderilmiyor.
+=> react bir librarydir. framework diyenlerde var fakat js library sidir.
+=> “React is not opinionated, which means that it won’t force you to follow any specific design patterns, project organizational structure, or logic. It’s all up to you.
+=> framework biselere zorlar kullanim acisindan , library de sana baglidir.
+=> 
+Framework : Komple bir sistemdir, ekosistemdir, bazı koşulları vardır. Bu framework'u kullanmak istiyorsak bu kurallara uymamız gerekiyor.
+Library: Örnek olarak react verebiliriz, JS library'dir. Onu alıp kullanabiliriz ve daha esnektir. Şartlarına zorlamıyor. Kullanırsan iyi olur der. Harici kütüphaneler ile kullanılır daha çok. Örneğin, react rooter da kullanabiliriz başka bir harici kütüphanede.
+
+=> single page application dir.
+=> component base bi program
+
+=> ortayya cikis amaci : render sayisini azaltmak, sayfada her degisikilikte butun sayfanin her seferinde bastan render edilmesi zaman alan bir durum , bunun onune gecmek icin
+=> cok icerik varsa kullanimi hizlidir.
+=> dezavantaji seo acisindan.indexleme acisindan.
+=> en buyuk artisi render sayisni azaltip hizli olmasi.
+=> 2011 de facebook tarafindan gelistirildi.
+=> babeljs.io : eski surumere cevirmek icin kllanilan site. reac bunu otomatik olarak yapiyor.
+
+=> https://www-freecodecamp-org.cdn.ampproject.org/c/s/www.freecodecamp.org/news/top-javascript-concepts-to-know-before-learning-react/amp/
+=> https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/related?hl=en
+
+=> react son yillarda cok populer ;
+=> https://www.npmtrends.com/angular-vs-vue-vs-react
+
+Reactta ;
+=> html kodlari js icine direk olarak yazilir.(jsx)
+=> virtual dom (INTRWV) : hizli kullanimi saglar
+
+=> https://medium.com/@muratbalci1/virtual-dom-nedir-8e3c95dcde5c
+
+=> virtual dom un calisma prensibi :
+react asil dom un bir kopyasini aliyor. bir guncelleme oldugunda o degisiminde kopyasini aliyor. sonra onceki kopya ile degisiklik olani kiyasliyor, farklari bulup degismesi gerekenler hangileri ise sadece onlari asil dom da guncellior.
+React in arka planda hizli calismasini saglar.
+
+=> en cok layout degisimleri(width,heightvb) rendering sayisini arttirir.
+
+=> virtual dom musterinin yani bizim bilgisayarlarimizda tutulur.
+
+=>REACT KURULUMU
+
+1- node.js indir ve kur
+node.js bir ortamdir. (envirenment)
+indirdikten sonra kontrol etmek icin, gitbash i ac, node -v yaz.
+=> ilgili video ;
+https://www.youtube.com/watch?v=MjG-xWBZhTs
+
+2- NPM (nodejs deki uygulamalarin manager i)
+node.js yuklendiginde npm otomatik olarak yuklu olarak gelir.
+gitbash e, nmp -v yazarak kontrol et.
+
+3- fakat genelde Yarn i tercih ediyoruz.
+daha hizli.
+yarn i kurmak gerekir.
+cdm yi admin olarak ac ya da gitbash e,'npm i -g yarn' yaz.
+'yarn -v' ile kontrol et.
+
+PROJE BASLATMAK ICIN;
+
+https://create-react-app.dev/docs/getting-started/
+
+1- projeyi nerde acmak istiyorsan orada gitbash i ac.
+
+2- 'npx create-react-app ProjeninIsmi' yaz.
+
+3- happy hacking i gorunce basari ile yuklendi demektir .
+
+4- gitbash de cikmadan , cd ProjeninIsmi ile projenin icine gir.
+
+5- npm start / yarn start yaz.
+
+6- 'control c' ile uygulamayi durdurabliriz.
+
+
+VSCODE UZERINDEN PROJEYI BASLATMAK ICIN;
+
+1- vscode u proje dosyasinda ac.
+
+2- terminal -> new terminal -> npm start / yarn start yaz.
+
+3- durdurmak icin 'control c'
+
+4- Durduktan sonra tekrar calistirmak icin npm start/yarn start yazip baslatabliriz.
+
+
+
+-------
+NOTE :
+public klaserunde -> index.html -> body icinde div. id si root.
+react icinde yapacagimiz her sey bu div elementinin icine basilacak.
+
+---
+
+HARICI KUTUPHANE EKLEME;
+
+1-control c ile durdur.
+2- npm i bootstrap
+npm install bootstrap
+yarn add bootstrap 
+
+3-yuklendikten sonra package.json -> dependencies e yuklenmesi gerekir kontrol et.
+
+
+INDIRILEN PROJEYE DEVAM ETME;
+
+1- vscodu o dosyada ac.
+2- sol taraftaki yerinden dosyanin uzerine gel. saga tikla. 'open in integrated terminal' i tikla.
+3- acilan terminale;
+yarn install / npm install yaz. (node_modules u indirmek icin, node_modules olmadan start verilmez.)
+
+
+
