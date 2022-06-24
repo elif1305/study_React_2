@@ -114,4 +114,7 @@ INDIRILEN PROJEYE DEVAM ETME;
 yarn install / npm install yaz. (node_modules u indirmek icin, node_modules olmadan start verilmez.)
 
 
-
+-> sass i projemizde kullanacaksak bunu node_modules e eklememiz gerekir.
+ayni bash(terminal) uzerinden yapmak istiyorsak projeyi durdurup 'yarn add sass' komutu ile yapabliriz.
+projeyi durdurmadan yapmak istiyorsak ; solsan projenin ustune gelip bir terminal daha aciyoruz. 'yarn add sass' komutunu yazarak ekliyoruz.
+npm icin: npm install sass

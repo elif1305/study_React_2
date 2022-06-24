@@ -1,0 +1,25 @@
+React için türkçe video önerileri
+https://www.youtube.com/watch?v=EoH-TliTV1Y&list=PL8IHDq7oEkgFKYIoNuubfZMuhhgEukkAg
+https://www.youtube.com/watch?v=jig4GPO7OTo&list=PL-Hkw4CrSVq_eyixSZ4sVI1x6d7akLpsy
+
+
+NOTE: 
+React Uygulamalarında Stillendirme yaparken klasik css kullandığımızda
+farklı dosyalarda verilen aynı class isimleri nedeniyle bazı stillerin parent dosyalardaki stiller tarafından
+ezilebildiğine dikkat çekmiştik. Bu problemi ortadan kaldırmanın bir çok yöntemi var mesela her bir class'ı unique vermek gibi.
+Ancak aynı isimleri kullanarak da bu sorun halledebilir.
+Module CSS ve harici Stillendirme kütüphanleri bizim için bunları halletmektedir.
+Aşağıdaki kısa video da module css ile bu sıkıntının nasıl giderileceği anlatılmış.
+
+
+https://app.patika.dev/courses/react/module-css
+
+
+
+https://color.adobe.com/tr/explore
+
+
+-> sass i projemizde kullanacaksak bunu node_modules e eklememiz gerekir.
+ayni bash(terminal) uzerinden yapmak istiyorsak projeyi durdurup 'yarn add sass' komutu ile yapabliriz.
+projeyi durdurmadan yapmak istiyorsak ; solsan projenin ustune gelip bir terminal daha aciyoruz. 'yarn add sass' komutunu yazarak ekliyoruz.
+npm icin: npm install sass
