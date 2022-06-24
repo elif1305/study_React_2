@@ -23,3 +23,8 @@ https://color.adobe.com/tr/explore
 ayni bash(terminal) uzerinden yapmak istiyorsak projeyi durdurup 'yarn add sass' komutu ile yapabliriz.
 projeyi durdurmadan yapmak istiyorsak ; solsan projenin ustune gelip bir terminal daha aciyoruz. 'yarn add sass' komutunu yazarak ekliyoruz.
 npm icin: npm install sass
+
+https://create-react-app.dev/docs/adding-a-sass-stylesheet/
+
+https://getcssscan.com/css-box-shadow-examples
+
