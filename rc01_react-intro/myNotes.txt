@@ -118,3 +118,15 @@ yarn install / npm install yaz. (node_modules u indirmek icin, node_modules olma
 ayni bash(terminal) uzerinden yapmak istiyorsak projeyi durdurup 'yarn add sass' komutu ile yapabliriz.
 projeyi durdurmadan yapmak istiyorsak ; solsan projenin ustune gelip bir terminal daha aciyoruz. 'yarn add sass' komutunu yazarak ekliyoruz.
 npm icin: npm install sass
+
+
+=> klasik bootstrap i projemizde kullanablilmek icin 
+1- terminale 'yarn add bootsrap '
+2- import dosyasini index.js (app.js de olabilir.) e ekle 'import 'bootstrap/dist/css/bootstrap.min.css';'
+
+
+=> herhangi bir hata veya warning ile karsilasildiginda;
+1- hatayi kopyala yapistir ile googla da arat.
+2- cikan cozum onerilerinden (stackoverflow) sitesinden cozumlere bak.
+3- or : pacckaage.js a sunu ekle. 
+4- yeniden yarn yukle yani projeyi tekrar bastan calistir.

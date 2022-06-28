@@ -1,0 +1,40 @@
+///////////
+   EVENTS
+///////////
+
+
+onClick
+onChange
+onSubmit
+onDrag
+onMouseLeave
+onSelect
+onLoad
+onPlaying
+onCopy
+onCuT
+
+https://reactjs.org/docs/events.html
+
+
+https://react-bootstrap.github.io/
+
+
+=> klasik bootstrap i projemizde kullanablilmek icin 
+1- terminale 'yarn add bootsrap '
+2- import dosyasini index.js (app.js de olabilir.) e ekle 'import 'bootstrap/dist/css/bootstrap.min.css';'
+
+
+=> 
+Basic Hooks
+useState()
+useEffect()
+useContext()
+Additional Hooks
+useReducer()
+useMemo()
+useCallback()
+useImperativeHandle()
+useDebugValue()
+useRef()
+useLayoutEffect()
