@@ -130,3 +130,33 @@ npm icin: npm install sass
 2- cikan cozum onerilerinden (stackoverflow) sitesinden cozumlere bak.
 3- or : pacckaage.js a sunu ekle. 
 4- yeniden yarn yukle yani projeyi tekrar bastan calistir.
+
+
+=> Bootstraptan aldiktan sonra duzenleme yapilmasinin unutulmamasi lazim.
+or: kapanis taglari </>
+class -> className
+for -> htmlFor
+
+=> reactta icon kullanimi icin
+https://react-icons.github.io/react-icons/
+
+bu kutupphanenin eklenmesi gerekir.
+1-yeni terminal ac
+2- yarn add react-icons  
+npm install react-icons
+yaparak yukle.
+3- sayfaya import yap.
+import { FaReact } from 'react-icons/fa'; 
+buradaki FaReact yukaridaki sayfadanki icon un ismi.
+4- Fareact ile kullanima hazir.
+
+
+
+
+
+
+
+
+
+
+
