@@ -1,0 +1,62 @@
+
+
+=> lifecycle ozeelikle classcomponenter ile ozdeslesmistir.
+
+=>functional componentlerde turevlerini(useeffect)kullanmaya calisarak ile bunu sagliyoruz.
+
+=> amac : componentle ilgili degisikliklerin nasil yapilacagini takip etmek
+eger bir component guncellekndikten sonra birsey yapmak istiyorsan sunu kullan , kaldirildiktan sonra bunu kullan gibi ozel yazilmis metodlari kullanilarak islemlerin yapilmasi
+
+=>  https://reactjs.org/docs/react-component.html
+
+3 ana dongu vardir
+
+Mounting – Birth of your component :bir componentin olusturulmasi ve DOM  a eklenmesi.
+Update – Growth of your component
+Unmount – Death of your component
+
+
+MOUNTING
+
+constructor() kurucu, yapıcı metot / binding with this  / state başlangıç değeri verirsek / ilk çalışır
+static getDerivedStateFromProps() çok kullanılmıyor(istisna)
+render() constructor dan sonra çalışır / DOM tree ye render yapar
+componentDidMount() ilk render dan sonra bişey çalıştıracaksak kullanırız /  bir kere çalışır / her refresh den sonra API den veri çekmek gibi..
+
+
+
+UPDATE
+
+static getDerivedStateFromProps() X
+shouldComponentUpdate() X
+render()  ikinci ve sonraki render lar / state ler değişince algıla DOM a bas
+getSnapshotBeforeUpdate() ilki hariç her render dan sonra başka iş yaptırmak için
+componentDidUpdate() ilk render da çalışmaz / comp. in prevState ve prevProps a erişimi var
+
+
+UNMOUNT
+
+componentWillUnmount()  isteği kapatmak için, uygulamayı bellekten kaldırmak için
+
+
+
+===================
+  USEEFFECT HOOK
+===================
+
+ihtiayc olursa :
+https://stackoverflow.com/questions/68030020/componentdidmount-and-componentdidupdate-together-using-useeffect-hook
+
+ders anlatimdaki user.jsx ornegi icin :
+https://jsonplaceholder.typicode.com/users
+
+https://i.pravatar.cc/300?img=${id}
+
+
+
+
+
+
+
+
+
