@@ -54,6 +54,20 @@ const Events = () => {
 
 export default Events;
 
+//! eger ki eventlara yazacagimiz fonksiyonlarda bir parametre varsa o fonksyionu arrow funct icinde cagir, parametresiz ise dogrudan referansi ile cagir.
+//! or : paremetresiz:  
+// <button onClick={handleClick} className="btn btn-warning">      
+//Click
+//</button>
+//! parametreli:
+//<button
+//onClick={() => handleClear('Clear Btn pressed')}
+//className="btn btn-dark"
+//>
+//Clear
+//</button>
+
+
 //! info console'da guncellendigini ancak DOM'da guncellenmedigini gorduk.
 //* Bunun sebebi REACT'in aksi belirtilmedigi surece elementleri
 //* static olarak kabul etmesinden kaynaklanir.

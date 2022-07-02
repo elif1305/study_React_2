@@ -65,7 +65,8 @@ const UseStateExample = () => {
         <button onClick={inc} className="btn btn-success">
           INC
         </button>
-        <button onClick={() => setCount(0)} className="btn btn-dark">
+        {/* burada setCount un tanimlamasinu yukarida degil direk burada yaptik. Eger aroow func ile tanimlama yapmasaydik surekli state de br yenileme olacakti bu da surekli render yani sonsuz dongu durumu olacakti. */}
+        <button onClick={() => setCount(0)} className="btn btn-dark"> 
           CLR
         </button>
         <button onClick={dec} className="btn btn-warning">

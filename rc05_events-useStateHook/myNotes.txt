@@ -24,6 +24,8 @@ https://react-bootstrap.github.io/
 1- terminale 'yarn add bootsrap '
 2- import dosyasini index.js (app.js de olabilir.) e ekle 'import 'bootstrap/dist/css/bootstrap.min.css';'
 
+class => className
+
 
 => 
 Basic Hooks
