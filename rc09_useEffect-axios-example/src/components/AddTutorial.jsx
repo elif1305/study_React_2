@@ -1,14 +1,14 @@
 import { useState } from 'react';
 
-const AddTutorial = ({ addTutorial }) => {
+const AddTutorial = ({ addTutorial }) => {  // home.jsx den gonderdigimiz addTutorial fonksiyonunu karsiliyoruz.
   const [title, setTitle] = useState('');
   const [desc, setDesc] = useState('');
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault();   // her yeni veri girildiginde sayfayi yenilemesin diye.
     addTutorial({ title: title, description: desc });
-    setTitle('');
-    setDesc('');
+    setTitle('');  // sayfa yenilendiginde bu kisimlari bosaltmasi icin
+    setDesc('');  // sayfa yenilendiginde bu kisimlari bosaltmasi icin
   };
 
   return (

@@ -151,9 +151,60 @@ buradaki FaReact yukaridaki sayfadanki icon un ismi.
 4- Fareact ile kullanima hazir.
 
 
+=> => yarn add bootstrap axios react-icons seklinden birden fazla sekilde de ekleme yapabliriz.
+
+=> postman ile (get)istek yapmak:
+
+1- api adresini postman a yapistir.
+2- get i sec . gonder e bas.
+
+not :surekli bu islemi yapacaksan send butonunun ustundeki save butonu ile kaydedebilirsin.
+
+
+=> postman ile post islemi yapmak:
+
+1- api adresini postmana yapistir.
+2- post u sec.
+3- body kismina gel. raw u sec. text kismindan da JSON sec.
+verilerini yaz.
+
+or :
+
+{
+"id": 421,
+"title": "sfgr",
+"description": "222",
+"published": false,
+"createdAt": "2022-07-03T06:37:20.832Z",
+"updatedAt": "2022-07-03T06:37:20.832Z"
+},
+{
+"id": 426,
+"title": "12",
+"description": "23",
+"published": false,
+"createdAt": "2022-07-03T07:20:00.979Z",
+"updatedAt": "2022-07-03T07:20:00.979Z"
+}
+
+
+4- sende butonuna bas.
 
 
 
+=> postman ile delete islemi yapmak:
+
+silme islemi genelde id lere gore yapilir.
+base url in sonuna id no eklenir.
+
+1- linki yaz . sonuna /idnosunu yaz . 
+
+or: 
+......./tutorials/273
+
+2- delete i sec.
+
+3- send butonuna bas.
 
 
 

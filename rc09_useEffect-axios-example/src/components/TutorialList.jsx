@@ -2,7 +2,7 @@ import { FaEdit } from 'react-icons/fa';
 import { AiFillDelete } from 'react-icons/ai';
 import EditTutorial from './EditTutorial';
 
-const TutorialList = ({ tutorials, deleteTutorial, editTutorial }) => {
+const TutorialList = ({ tutorials, deleteTutorial, editTutorial }) => {   //home.jsx den gonderdigimiz key leri yakaliyoruz.
   return (
     <div className="container mt-4">
       <table className="table table-striped">
