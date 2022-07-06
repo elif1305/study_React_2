@@ -1,0 +1,16 @@
+/////////////////
+    STYLED COMPONENT
+/////////////////////
+
+
+https://styled-components.com/docs/basics
+
+https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components
+
+vs code - styled snippets
+
+import styled from 'styled-components';
+
+
+-----------
+import { ThemeProvider } from 'styled-components';

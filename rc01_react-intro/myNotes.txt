@@ -207,6 +207,13 @@ or:
 3- send butonuna bas.
 
 
+=> styled component kurulusu
+
+https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components
+
+npm -> npm install --save styled-components
+yarn -> yarn add styled-components
+
 
 
 
