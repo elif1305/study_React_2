@@ -215,6 +215,13 @@ npm -> npm install --save styled-components
 yarn -> yarn add styled-components
 
 
+REACT ROUTER KURULUMU
+
+https://reactrouter.com/
+
+ => npm install react-router-dom
+=> yarn add react-router-dom
+
 
 
 
