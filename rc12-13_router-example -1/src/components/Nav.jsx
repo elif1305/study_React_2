@@ -1,5 +1,8 @@
 import logo from '../img/logo.png';
 import { Link, NavLink } from 'react-router-dom';
+
+// Burada Navlink in import edilip kullanilmasinin amaci uzerine tiklandiginda aktiflik ozelligi var. bu nedenle avantajli
+
 function Nav() {
   return (
     <nav className="navbar navbar-expand-md navbar-light">
@@ -20,6 +23,7 @@ function Nav() {
             <li className="nav-item">
               <NavLink
                 style={({ isActive }) => ({ color: isActive && 'red' })}
+                // is active true ise rengi red yap.
                 to="/"
                 className="nav-link active"
                 aria-current="page"

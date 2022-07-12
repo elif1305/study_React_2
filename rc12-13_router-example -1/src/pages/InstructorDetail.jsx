@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom'; //! usenavigate kullanimi icin step 1
 import { useState, useEffect } from 'react';
 // import { useLocation } from 'react-router-dom';
 
@@ -6,7 +6,7 @@ const InstructorDetail = () => {
   //! Linkteki parametreyi almak icin useParams Hook'u kullanilabilir.
   const { id } = useParams();
 
-  const navigate = useNavigate();
+  const navigate = useNavigate();   //! usenavigate kullanimi icin step 2
 
   //! navigate ile gonderilen state(veriyi) yakalamak icin ise
   //! useLocation Hook'u kullanilabilir.
@@ -35,10 +35,10 @@ const InstructorDetail = () => {
       <h4>{inst.email}</h4>
       <h4>{inst.phone}</h4>
       <div>
-        <button onClick={() => navigate('/')} className="btn btn-success me-2">
+        <button onClick={() => navigate('/')} className="btn btn-success me-2">   //! usenavigate kullanimi icin step 3
           Home
         </button>
-        <button onClick={() => navigate(-1)} className="btn btn-warning">
+        <button onClick={() => navigate(-1)} className="btn btn-warning">   //! usenavigate kullanimi icin step 3
           Go Back
         </button>
       </div>

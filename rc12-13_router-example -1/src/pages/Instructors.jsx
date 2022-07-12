@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';  //! step 1 import et
+
+// use... ile baslayan bise varsa bu hook tur.
 
 const Instructors = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate();  //! step 2 tanimla
 
   const [instructors, setInstructors] = useState([]);
 
@@ -27,7 +29,7 @@ const Instructors = () => {
               className="col-sm-12 col-md-6 col-lg-4"
               key={id}
               // onClick={() => navigate(`/instructors/${id}`)}
-              onClick={() => navigate(`/instructors/${id}`, { state: inst })}
+              onClick={() => navigate(`/instructors/${id}`, { state: inst })}  //! step 3 cagir, step 4 app.js te
               style={{ cursor: 'pointer' }}
             >
               <img
