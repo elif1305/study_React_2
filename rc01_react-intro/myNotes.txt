@@ -223,5 +223,25 @@ https://reactrouter.com/
 => yarn add react-router-dom
 
 
+===================================================================
 
+//? api key ve id yyi direk burada acik(dierk olarak)kullanmak uygun degildir(herkese acik bi sekilde, githuba gondermek uygun degildir) . bunlari gizleyerek gondermek icin:
+  // 1- proje dosyasinda new file ile yeni bir dosya ac
+  // 2- ".env" adinda yeni belgeyi olustur.(ana dizinde olacak, gitignore ile ayni dizinde olmali ONEMLI !)
+  // 3- dosya icine :
+  // REACT_APP_APP_KEY = sdfsdfsdfs
+  // REACT_APP_APP_ID = sdfsdfsdfds345354
+  // 4- home dosyasine geri gel. 
+  //   const APP_ID = process.env.REACT_APP_APP_ID;
+  // const APP_KEY = process.env.REACT_APP_APP_KEY;
+  // olarak tanimla.
+  //! boyle bir env dosyasi yaptiysan projeyi durdurup ctrl+c yeniden yarn start diyerek baslatmak gerekir.env dosyasi icinde bir degisiklik yaparsan projeyi yine durdurup yeniden baslatmak gerekir.
+  // env dosyalari default olarak gitignora eklenmis durumda olur. kontrol et yoksa #misc in altindaki yere .env olarak ekle.
+  //* netfly dan deploy ederken .env dosyasini gormez cunku gitignoreun icinde. bunun ucun netlfydan ayarinin yapilmasi lazim.
+  // 1- projeyi deploy et
+  // 2- projenin ustune tikla
+  // 3- site settings e tikla
+  // 4- sol taraftaki yerden build & deploy a tikla.
+  // 5- altinda acilan yerden Environment a tikla.
+  // 6- acilan yerden Envirenment variables yerinde edit e tikla ve .env icinde olan variables lari buraya gir.
 

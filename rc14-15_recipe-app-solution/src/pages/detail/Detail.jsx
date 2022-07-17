@@ -9,6 +9,7 @@ import {
 import { useLocation } from 'react-router-dom';
 import dietSvg from '../../assets/diet.svg';
 import defaultImage from '../../assets/default-image.jpg';
+
 const Detail = () => {
   const { state } = useLocation();
 
@@ -58,7 +59,8 @@ const Detail = () => {
           {state.ingredientLines.map((line, index) => (
             <div key={index}>
               <p>
-                {index + 1} - {line}
+                {/*  // index 0 oldugu icin yanina + 1 yazildi. yani 1 den baslayarak sira yapmak icin. */}
+                {index + 1} - {line}  
               </p>
               <br />
             </div>
