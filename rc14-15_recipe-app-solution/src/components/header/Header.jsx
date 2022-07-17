@@ -19,7 +19,7 @@ const Header = ({ setQuery, setSelectedMeal, mealType, getData }) => {
         <FoodInput
           type="text"
           placeholder="search"
-          onChange={(e) => setQuery(e.target.value)}
+          onChange={(e) => setQuery(e.target.value)}  // parenttaki query ye gonderdik
         />
         <Button type="submit">SEARCH</Button>
         <Select
@@ -27,8 +27,8 @@ const Header = ({ setQuery, setSelectedMeal, mealType, getData }) => {
           id="mealType"
           onChange={(e) => setSelectedMeal(e.target.value)}
         >
-          {mealType.map((meal, index) => (
-            <option key={index} value={meal.toLowerCase()}>
+          {mealType.map((meal, index) => (                           // suslu varsa return e gerek yok, faka sadece 1 ifade dondureceksekparantez kullanabliriz o zman return e grek kalmaz.
+            <option key={index} value={meal.toLowerCase()}>                
               {meal}
             </option>
           ))}
