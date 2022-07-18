@@ -1,0 +1,37 @@
+materıal uı kurulumu:
+
+1- https://mui.com/
+2- installion kismina tikla
+3- terminale:
+npm install @mui/material @emotion/react @emotion/styled veya
+yarn add @mui/metarial @emotion/react @emotion/styled
+4- package.json da dependicies kismindan kontrol et
+5- roboto fontu kur , index.html e
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+/>
+
+6- font icons 
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+/>
+
+
+7- svg icons
+npm install @mui/icons-material
+
+yarn add @mui/icons-material
+
+
+------------
+
+import Typography from '@mui/material/Typography';
+// or
+import { Typography } from '@mui/material';
+
+==========
+
+makeStyles i kullanmak icin:
+yarn add @mui/styles
