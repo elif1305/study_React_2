@@ -1,10 +1,15 @@
 import { createContext, useContext } from 'react';
 import { useState, useEffect } from 'react';
 
+
+// contex uygulamalari cogunlukla bu sekilde kullanili. yani bir dosya icerisinde defining ve provider yazilir.
+
+
+
 //? 1- Defining
 export const UserContext = createContext();
 
-//? 3-Consume function (Custom Hook)
+//? 3-Consume function (Custom Hook)  ( zorunlu degildir ama yazilirsa iyi olur.)
 export const useUserContext = () => {
   return useContext(UserContext);
 };

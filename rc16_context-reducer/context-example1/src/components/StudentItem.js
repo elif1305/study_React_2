@@ -6,11 +6,13 @@ const StudentItem = ({ student }) => {
 
   // const { students, setStudents } = useContext(StudentContext);
   const { changeColor } = useContext(StudentContext);
+// changecolor i appte olusturduk , buraya gonderdik. 2. yontem olarak bu da kullanisli.
 
+  // 1. yontem: changecolor i burada tanimladik.
   // const changeColor = (id, color) => {
   //   setStudents(
   //     students.map((student) =>
-  //       student.id === id ? { ...student, color: color } : student
+  //       student.id === id ? { ...student, color: color } : student   // burada student yerine null yazilamazdi. cunku map illaki bise dondurmek zorunda null yazilirsa null cevirridi.
   //     )
   //   );
   // };

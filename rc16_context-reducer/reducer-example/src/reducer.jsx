@@ -4,6 +4,8 @@ export const initialState = {
   error: '',
 };
 
+
+// reducer yazilmasi best practisedir , degiseblir. ismi.
 export const reducer = (state, action) => {
   switch (action.type) {
     case 'START':

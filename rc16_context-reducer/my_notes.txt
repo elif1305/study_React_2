@@ -63,8 +63,15 @@ GENELDE  context adinda (components dosyasi ile ayni hizada ) bir dosya olusturu
 
 
 
+- hem props hem context kullanimi olablir.
+- yani br component hem globalden hemde localstateden veri alablir.
 
+===============================================
+REDUCER:
 
+Birden fazla local state i tek bir elden kontrol etmeyi saglayan sistem. hook = useReduce 
+
+redux icinde cok kullanilan bir yapidir.
 
 
 
