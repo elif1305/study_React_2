@@ -272,3 +272,17 @@ yarn add @mui/metarial @emotion/react @emotion/styled
 npm install @mui/icons-material
 
 yarn add @mui/icons-material
+
+---------------------------------------
+
+REDUX :
+
+// redux : harici bir kutuphanedir.
+// global state management kutuphanesidir.
+// gecmisi flux ve elm neye dayanir.
+// dan abramov tarafindan gelistirilimistir.(reactin gelistiricisi)
+// complex statelerin oldugu uygulamalarda tercih edileblir.
+
+//!kurulumu
+// npm install redux react-redux
+// yarn add redux react-redux

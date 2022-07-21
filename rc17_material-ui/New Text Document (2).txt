@@ -1,8 +1,12 @@
+ınlıne sytlıng ozellıgı v5 ıle geldı.
+dokumantasyondan bakilarak kullanilmali. ezberlemesi biraz zor.
+sx = inline ozellik verme propu
+
 materıal uı kurulumu:
 
 1- https://mui.com/
 2- installion kismina tikla
-3- terminale:
+3- terminale:  (kullanacagin projenin klasorune)
 npm install @mui/material @emotion/react @emotion/styled veya
 yarn add @mui/metarial @emotion/react @emotion/styled
 4- package.json da dependicies kismindan kontrol et
@@ -19,7 +23,7 @@ yarn add @mui/metarial @emotion/react @emotion/styled
 />
 
 
-7- svg icons
+7- svg icons  (mui iconlarini kullanmak istemeiyorsan kendi iconlarinni ekleyeblirsin)
 npm install @mui/icons-material
 
 yarn add @mui/icons-material
@@ -27,11 +31,29 @@ yarn add @mui/icons-material
 
 ------------
 
-import Typography from '@mui/material/Typography';
+import Typography from '@mui/material/Typography';              = noktaatisi ekleme
 // or
-import { Typography } from '@mui/material';
+import { Typography } from '@mui/material';                     = birsuru icinden cekerek ekleme
 
 ==========
 
 makeStyles i kullanmak icin:
 yarn add @mui/styles
+
+
+=====================
+
+mesela SEO icin h1 kullanimi 1 tane ve onemli oluyor, burada biz 2 tane h1 varmis gibi gosterebliriz. 
+
+variant = "h2"             stylingi(gorunusu) h2
+component = "h4"          kendisi h4
+
+=======================
+
+sx = inline ozellik verme ozelligi (js formatinda)
+sx = {{background: 'grey', mt: 4 , border: '1px solid'}
+
+===================
+
+container sagdan soldan margin otomatik veren bi ozeillik oldugu icin kullanimi guzel
+
