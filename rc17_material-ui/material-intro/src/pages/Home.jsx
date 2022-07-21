@@ -7,7 +7,7 @@ import { deepPurple, teal } from '@mui/material/colors';
 import MakeStylesComp from '../components/MakeStylesComp';
 
 const Home = () => {
-  const theme = createTheme({
+  const theme = createTheme({            // theme olustururken ya da degistirirken createTheme ile yapilir zorunlu.
     palette: {
       primary: {
         main: teal[400],
