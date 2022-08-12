@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import App from './App';  // App.js seklinde yazilsa da olur .js ve jsx i otomatik olarak algilar.
-import './index.css';
+import './index.css';   // css dosyalari dogrudan import yapilabiliyor.
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);

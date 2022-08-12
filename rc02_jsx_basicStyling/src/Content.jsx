@@ -8,8 +8,8 @@
 //* property isimlerinde camelCase kullanimalidir.
 //* class isimleri icin className kullanilir.
 //* Material UI, Styled Component, Sass, Bootstrap v.b harici kutuphaneler kullanilabilir.
-//?<img src="./hkj/jhk" alt="" /> // bu sekilde bir erisim olmuyor. yol verilmesi laizm.
-//? // ? Dahili bir resim eklemek icin import yapmak gereklidir.
+//?<img src="./hkj/jhk" alt="" /> // bu sekilde bir erisim olmuyor. yol verilmesi lazim.
+//? // ? Dahili bir resim eklemek icin import yapmak gereklidir. Dahili degilse, or: internetten direk aliniyorsa, https uzantisi src icine koyulur.
 
 
 
@@ -28,6 +28,7 @@ const imgStyle = {
     <div className='content'>
         {/* inline style */}
         <h2 style={{color: 'red'}}>React JS</h2>
+        // camelCase ile css elementlerini yaz.
         <p style={{ backgroundColor: 'lightgreen' }} >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illum iusto molestiae, perferendis hic dolore.</p>
         <p className='par1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis consequuntur facere ullam praesentium fuga eos totam quas quidem magni? Autem harum saepe expedita illum sed, voluptatem doloribus dolor nostrum?</p>
         <img 
