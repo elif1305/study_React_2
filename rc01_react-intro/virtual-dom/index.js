@@ -4,7 +4,7 @@ const setTime = () => {
    <div>
       <h1>Javascript Element</h1>
       <input type="text" />
-      <p>${new Date().toLocaleTimeString()}</p>            // sadece p yani child element guncellenmesine ragmen parentlarda guncelleniyor.
+      <p>${new Date().toLocaleTimeString()}</p>      // sadece p yani child element guncellenmesine ragmen parentlarda guncelleniyor.
    </div>
 `;
 

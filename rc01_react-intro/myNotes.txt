@@ -10,17 +10,22 @@
 => framework biselere zorlar kullanim acisindan , library de sana baglidir.
 => 
 Framework : Komple bir sistemdir, ekosistemdir, bazı koşulları vardır. Bu framework'u kullanmak istiyorsak bu kurallara uymamız gerekiyor.
-Library: Örnek olarak react verebiliriz, JS library'dir. Onu alıp kullanabiliriz ve daha esnektir. Şartlarına zorlamıyor. Kullanırsan iyi olur der. Harici kütüphaneler ile kullanılır daha çok. Örneğin, react rooter da kullanabiliriz başka bir harici kütüphanede.
+Library: Örnek olarak react verebiliriz, JS library'dir. Onu alıp kullanabiliriz ve daha esnektir. Şartlarına zorlamıyor. Kullanırsan iyi olur der. 
+Harici kütüphaneler ile kullanılır daha çok. Örneğin, react rooter da kullanabiliriz başka bir harici kütüphanede.
 
 => single page application dir.
 => component base bi program
+=> component: icinde html i css i ve js i var. tek element olusturuluyor.
+=> LEGO mantigi dusunulebliri. kucuk birimlerden buyuk bir yapi olusturuluyor.
+=> https://reactjs.org/
 
-=> ortayya cikis amaci : render sayisini azaltmak, sayfada her degisikilikte butun sayfanin her seferinde bastan render edilmesi zaman alan bir durum , bunun onune gecmek icin
+=> ortayya cikis amaci : render sayisini azaltmak, sayfada her degisikilikte butun sayfanin her seferinde bastan render 
+edilmesi zaman alan bir durum , bunun onune gecmek icin
 => cok icerik varsa kullanimi hizlidir.
 => dezavantaji seo acisindan.indexleme acisindan.
 => en buyuk artisi render sayisni azaltip hizli olmasi.
 => 2011 de facebook tarafindan gelistirildi.
-=> babeljs.io : eski surumere cevirmek icin kllanilan site. reac bunu otomatik olarak yapiyor.
+=> babeljs.io : eski surumere cevirmek icin kllanilan site. react bunu otomatik olarak yapiyor.
 
 => https://www-freecodecamp-org.cdn.ampproject.org/c/s/www.freecodecamp.org/news/top-javascript-concepts-to-know-before-learning-react/amp/
 => https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/related?hl=en
@@ -35,12 +40,16 @@ Reactta ;
 => https://medium.com/@muratbalci1/virtual-dom-nedir-8e3c95dcde5c
 
 => virtual dom un calisma prensibi :
-react asil dom un bir kopyasini aliyor. bir guncelleme oldugunda o degisiminde kopyasini aliyor. sonra onceki kopya ile degisiklik olani kiyasliyor, farklari bulup degismesi gerekenler hangileri ise sadece onlari asil dom da guncellior.
+react asil dom un bir kopyasini aliyor. bir guncelleme oldugunda o degisiminde kopyasini aliyor. sonra onceki kopya ile degisiklik olani kiyasliyor, 
+farklari bulup degismesi gerekenler hangileri ise sadece onlari asil dom da guncellior.
 React in arka planda hizli calismasini saglar.
 
 => en cok layout degisimleri(width,heightvb) rendering sayisini arttirir.
 
 => virtual dom musterinin yani bizim bilgisayarlarimizda tutulur.
+
+=> react otoamatik olarak olusturulan tum elementleri static olarak algilar. eger bir dinamiklik, 
+degiskenlik varsa bunu bizim reacta bildirmemiz gerekir.(or: hookllar ile)
 
 =>REACT KURULUMU
 
@@ -58,7 +67,7 @@ gitbash e, nmp -v yazarak kontrol et.
 daha hizli.
 yarn i kurmak gerekir.
 cdm yi admin olarak ac ya da gitbash e,'npm i -g yarn' yaz.
-'yarn -v' ile kontrol et.
+'yarn -v' yada 'yarn --version' ile kontrol et.
 
 PROJE BASLATMAK ICIN;
 
@@ -66,7 +75,7 @@ https://create-react-app.dev/docs/getting-started/
 
 1- projeyi nerde acmak istiyorsan orada gitbash i ac.
 
-2- 'npx create-react-app ProjeninIsmi' yaz.
+2- 'npx create-react-app ProjeninIsmi' yaz.   (turkce karakter, bosluk kullanma)
 
 3- happy hacking i gorunce basari ile yuklendi demektir .
 
@@ -74,7 +83,7 @@ https://create-react-app.dev/docs/getting-started/
 
 5- npm start / yarn start yaz.
 
-6- 'control c' ile uygulamayi durdurabliriz.
+6- 'control c' ile uygulamayi durdurabliriz. (browser kapansa da ctrl c yapilmazsa durmaz, browseri mesgul eder.)
 
 
 VSCODE UZERINDEN PROJEYI BASLATMAK ICIN;
@@ -112,7 +121,7 @@ INDIRILEN PROJEYE DEVAM ETME;
 2- sol taraftaki yerinden dosyanin uzerine gel. saga tikla. 'open in integrated terminal' i tikla.
 3- acilan terminale;
 yarn install / npm install yaz. (node_modules u indirmek icin, node_modules olmadan start verilmez.)
-
+4- yarn start de baslat
 
 -> sass i projemizde kullanacaksak bunu node_modules e eklememiz gerekir.
 ayni bash(terminal) uzerinden yapmak istiyorsak projeyi durdurup 'yarn add sass' komutu ile yapabliriz.
@@ -225,7 +234,8 @@ https://reactrouter.com/
 
 ===================================================================
 
-//? api key ve id yyi direk burada acik(dierk olarak)kullanmak uygun degildir(herkese acik bi sekilde, githuba gondermek uygun degildir) . bunlari gizleyerek gondermek icin:
+//? api key ve id yyi direk burada acik(dierk olarak)kullanmak uygun degildir(herkese acik bi sekilde, githuba gondermek uygun degildir) . 
+bunlari gizleyerek gondermek icin:
   // 1- proje dosyasinda new file ile yeni bir dosya ac
   // 2- ".env" adinda yeni belgeyi olustur.(ana dizinde olacak, gitignore ile ayni dizinde olmali ONEMLI !)
   // 3- dosya icine :
@@ -235,7 +245,8 @@ https://reactrouter.com/
   //   const APP_ID = process.env.REACT_APP_APP_ID;
   // const APP_KEY = process.env.REACT_APP_APP_KEY;
   // olarak tanimla.
-  //! boyle bir env dosyasi yaptiysan projeyi durdurup ctrl+c yeniden yarn start diyerek baslatmak gerekir.env dosyasi icinde bir degisiklik yaparsan projeyi yine durdurup yeniden baslatmak gerekir.
+  //! boyle bir env dosyasi yaptiysan projeyi durdurup ctrl+c yeniden yarn start diyerek baslatmak gerekir.env dosyasi icinde bir degisiklik 
+yaparsan projeyi yine durdurup yeniden baslatmak gerekir.
   // env dosyalari default olarak gitignora eklenmis durumda olur. kontrol et yoksa #misc in altindaki yere .env olarak ekle.
   //* netfly dan deploy ederken .env dosyasini gormez cunku gitignoreun icinde. bunun ucun netlfydan ayarinin yapilmasi lazim.
   // 1- projeyi deploy et
