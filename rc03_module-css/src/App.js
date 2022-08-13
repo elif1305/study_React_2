@@ -19,4 +19,5 @@ export default App;
 
 
 // bazi onemli bilgileri parentten alip asagilara iletmek daha mantiklidir.
-// veriler genelde yukardan cekilir.
+//! veriler genelde yukardan(parent) cekilir.
+// or: tema bilgileri

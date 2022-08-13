@@ -16,3 +16,11 @@ const Buton = ({ btnName }) => {
 };
 
 export default Buton;
+
+
+//! buton un div ine title classi verildi. card in div ine de title classi verildi. yani ikisine de ayni class ismi verildi.
+//! bu duurmda biri digerini ezer. bu sorunun cozulmesi icin :
+//? 1- btn.css dosyasinin adini module.css olarak degistir.
+//* module.css unique className'ler ürettiği için istenmeyen stil ezilmeleri olmaz.
+//? 2- import btnStyle from './buton.module.css'; seklinde import et.
+//? 3- className ini  -> className={btnStyle["title"]}  seklinde yaz. 
