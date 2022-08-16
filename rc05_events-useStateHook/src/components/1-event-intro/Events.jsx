@@ -22,7 +22,7 @@ const Events = () => {
   };
   const handleChange = (e) => {
     info = 'HOOKS';
-    console.log(info);
+    console.log(info);              // Cconsole  a bakildiginda yazi degisrek hooks oluyor. fakat dom a basmiyor.
     console.log(e.target);
   };
 
@@ -30,14 +30,20 @@ const Events = () => {
     <div className="container text-center mt-4">
       {/* info bir degisken oldugu icin {} icinde yazilmasi gerekir. */}
       <div className="display-4 text-danger m-4">{info}</div>  
+     
+     
+     {/* ORNEK 1 */}
       {/* onclick prog.ni handleclick i tanimladik(baska bir seyde yazabilirz bize bagli buraya yazilacak isimyuruyerek ), fakat handleclick i tanimlamamaiz gerekiyor. burasi jsx alani. js alanina gecmemiz gerekiyor. yani return un ust kismi. */}
       <button onClick={handleClick} className="btn btn-warning">      
         Click
       </button>
 
+
+       {/* ORNEK 2 */}
       {/* Eger bir event fonksiyonunun paremetresi olmasi gerkiyorsa
       bu fonksiyon bir arrow fonks. tarafindan  cagrilmalidir. Aksi
       takdirde event fonksiyonu event gerceklesmeden cagirilir */}
+      {/* paremetre olmasa da istenilirse hep arrow function yontemi kullanilablir.Yukardakinin ezberlenmesine gerek kalmaz */}
       <button
         onClick={() => handleClear('Clear Btn pressed')}
         className="btn btn-dark"
@@ -45,6 +51,9 @@ const Events = () => {
         Clear
       </button>
 
+
+
+       {/* ORNEK 3 */}
       <button onClick={(e) => handleChange(e)} className="btn btn-danger">
         Change
       </button>

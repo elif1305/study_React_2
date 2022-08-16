@@ -14,17 +14,28 @@ onPlaying
 onCopy
 onCuT
 
+
+-----------------------------------------------
 https://reactjs.org/docs/events.html
 
 
 https://react-bootstrap.github.io/
 
 
-=> klasik bootstrap i projemizde kullanablilmek icin 
-1- terminale 'yarn add bootsrap '
+=> klasik bootstrap i projemizde kullanablilmek icin :  (2 yontem var, ya durdur ekle sonra tekrar calistir ya da durdurmadan, 2. bir terminal ac orda bootstrapi ekle )
+1- terminale 'yarn add bootstrap '
 2- import dosyasini index.js (app.js de olabilir.) e ekle 'import 'bootstrap/dist/css/bootstrap.min.css';'
 
+tek fark :
 class => className
+olarak yaziliyor.
+
+
+-------------------------------
+herahngi bir hata veya warning ciktiginda , hatayi kopyala ve googleda arastir.Ozellikle stackoverflowun sitesinde ayni probleme yonelik cozumleri bulablirsin.
+cozumu yaptiktan sonra projeyi durdurup tekradan calistir.
+-------------------------------
+
 
 
 => 

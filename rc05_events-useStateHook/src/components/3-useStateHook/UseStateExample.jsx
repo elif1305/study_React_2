@@ -48,7 +48,7 @@ const UseStateExample = () => {
   };
 
   const incAge = () => {
-    // setInfo(info.age + 1);
+    // setInfo(info.age + 1);  // TUM INFOYU KALDIRDI
     // console.log(info.age);  // BU SEKILDE YAPILDIGINDA INFOYU BOZUYOR. 
 
     // setInfo({ name: 'Ella Jhonson', email: 'ej@gmail.com', age: 28 }); // TAMAMINI DEGISTIRECEKSEK SORUN OLMUYOR. FAKAT SADECE OR: AGE I DEGISTIRECEKSEK ONCE ACMAMIZ GERKIYOR. ASAGIDAKI GIBI
@@ -57,9 +57,15 @@ const UseStateExample = () => {
     setInfo({ ...info, age: info.age + 1 });  //! ONEMLI COK KULLANILAN BIR YAPI
   };
 
-  console.log(info);
+  // console.log(info); // INFONUN NE OLDUGUNA BAKTIK
+
+
   return (
     <div className="container text-center mt-4">
+
+
+
+      {/* ORNEK 1 */}
       <section>
         <h1 className="display-4 text-danger m-4">USESTATE COUNT:{count}</h1>
         <button onClick={inc} className="btn btn-success">
@@ -74,6 +80,9 @@ const UseStateExample = () => {
         </button>
       </section>
 
+
+
+      {/* ORNEK 2 */}
       <section>
         <h1 className="display-4 text-danger m-4">USESTATE OBJECT</h1>
         <h2>{info.name}</h2>
@@ -83,6 +92,11 @@ const UseStateExample = () => {
           inc age
         </button>
       </section>
+
+
+
+
+
     </div>
   );
 };
