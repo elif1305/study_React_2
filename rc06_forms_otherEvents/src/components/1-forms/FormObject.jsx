@@ -1,6 +1,8 @@
 import { useState } from 'react';
 
 const FormObject = () => {
+
+  
   const [formValues, setFormValues] = useState({
     username: '',
     email: '',
@@ -27,6 +29,10 @@ const FormObject = () => {
   return (
     <div>
       <form style={{ margin: '5rem' }} onSubmit={handleSubmit}>
+
+
+
+
         <div className="mb-3">
           <label htmlFor="username" className="form-label">
             Username <span className="text-danger">:{formValues.username}</span>
@@ -39,6 +45,9 @@ const FormObject = () => {
             onChange={handleFormValues}
           />
         </div>
+
+
+
         <div className="mb-3">
           <label htmlFor="email" className="form-label">
             Email address
@@ -52,6 +61,9 @@ const FormObject = () => {
             onChange={handleFormValues}
           />
         </div>
+
+
+
         <div className="mb-3">
           <label htmlFor="password" className="form-label">
             Password
@@ -65,9 +77,13 @@ const FormObject = () => {
           />
         </div>
 
+
         <button type="submit" className="btn btn-primary">
           Submit
         </button>
+
+
+
       </form>
     </div>
   );

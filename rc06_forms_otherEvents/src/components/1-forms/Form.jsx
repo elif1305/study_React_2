@@ -11,7 +11,7 @@ const Form = () => {
   };
 
   const handleSubmit = (e) => {
-    // e.preventDefault();
+    // e.preventDefault();          // bunu yaziyorsak sonrasinda yazilan yerlerinde silinmesi icin hemen alttaki bosluklarinda yazilmasi gerekir.
     alert(`username:${username}
     email:${email}
     password:${password}
@@ -23,6 +23,9 @@ const Form = () => {
   return (
     <div>
       <form style={{ margin: '5rem' }} onSubmit={handleSubmit}>
+
+
+
         <div className="mb-3">
           <label htmlFor="username" className="form-label">
             Username <span className="text-danger">:{username}</span>
@@ -35,6 +38,9 @@ const Form = () => {
             onChange={handleUsername}
           />
         </div>
+
+
+
         <div className="mb-3">
           <label htmlFor="email" className="form-label">
             Email address <span className="text-danger">{email}</span>
@@ -47,6 +53,8 @@ const Form = () => {
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
+
+
         <div className="mb-3">
           <label htmlFor="password" className="form-label">
             Password
@@ -60,12 +68,23 @@ const Form = () => {
           />
         </div>
 
+
+
+
         <button type="submit" className="btn btn-primary">
           Submit
         </button>
+
+
+
       </form>
     </div>
   );
 };
 
 export default Form;
+
+
+// bootstraptan alinann kodu duzenle:
+// 1- class lar -> className
+// 2- for lar -> htmlFor
