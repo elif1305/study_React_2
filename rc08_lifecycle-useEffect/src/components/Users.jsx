@@ -10,11 +10,13 @@ const Users = () => {
   };
 
   useEffect(() => {
-    //?componentDidMount
+    //?componentDidMount               //bir veriyi bir butona bagli olarak degilde , component mount oldugunda direk cek demek icin getuseri burada cagiriyoruz.
     getUsers();
   }, []);
 
-  console.log(users);
+
+  //! kod okumaya basladiginda ilk bu kisimdan itibaren render ediliyor.sonra ust kisma yani fetch , useEffect kismina geciyor.
+  console.log(users); // bu nedenleconsole a baktigimizda ilk undefined gelir(yukarda users in ilk degerine bos verildigi icin) sonrasinda veriyi ceker.
   return (
     <div>
       <h1>USER LIST</h1>

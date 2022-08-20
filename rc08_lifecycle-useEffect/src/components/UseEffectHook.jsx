@@ -47,7 +47,7 @@ const UseEffectHook = () => {
   //   setTimeout(() => {
   //     alert('Data Fetched');
   //   }, 1000);
-  // }, [count]);
+  // }, [count]);    // [] dependicy arrayi silersekte aynisi olur , yani mounted ve updated birlikte calisir.
 
   //! ComponentDidMount + componentWillUnmount
   const fetchData = () => {
@@ -67,14 +67,22 @@ const UseEffectHook = () => {
 
   console.log('rendered');
   return (
+
     <div className="container text-center mt-4">
+
       <h1 className="text-danger">USEEFFECT</h1>
+
       <h3>Count:{count}</h3>
+
       <button className="btn btn-warning" onClick={() => setCount(count + 1)}>
         INC
       </button>
+
     </div>
   );
 };
 
 export default UseEffectHook;
+
+
+//! NOTE: mount sadece bir kez calisir.
