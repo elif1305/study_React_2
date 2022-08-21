@@ -7,7 +7,7 @@ function Nav() {
   return (
     <nav className="navbar navbar-expand-md navbar-light">
       <div className="container-fluid">
-        <Link to="/" className="navbar-brand">
+        <Link to="/" className="navbar-brand">     // a tagi yerine link to yu kullan. 
           <img src={logo} alt="" />
         </Link>
         <button

@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Nav />
+        <Nav />      //! hep gozukmesi gereken comp. oldugu icin routes un disinda
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/instructors" element={<Instructors />} />
@@ -19,7 +19,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-        <Footer />
+        <Footer />       //! hep gozukmesi gereken comp. oldugu icin routes un disinda
+        <Routes></Routes>
       </BrowserRouter>
     </>
   );
