@@ -34,17 +34,17 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="instructors" element={<Instructors />} />
+          <Route path="instructors" element={<Instructors />} />    // "/about" gibi yani / kullanilirsa absulete olarak algiliyor.
           <Route path="instructors/:id" element={<InstructorDetail />} />
 
           {/* Nested Route */}
           <Route path="paths" element={<Paths />}>
-            <Route index element={<FullStack />} />
+            <Route index element={<FullStack />} />          // index element : path acildiginda hangisini gorunmesini istiyorsak ona index veriyoruz. index sadece nasted yapilarda kullanlir.
             <Route path="fullstack" element={<FullStack />} />
             <Route path="aws" element={<Aws />} />
           </Route>
 
-          <Route path="contact" element={<PrivateRouter />}>
+          <Route path="contact" element={<PrivateRouter />}>   // login olmadan girilmemesi icin yapilan router
             <Route path="" element={<Contact />} />
           </Route>
 

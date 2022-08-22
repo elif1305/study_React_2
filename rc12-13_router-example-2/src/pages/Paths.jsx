@@ -21,7 +21,7 @@ const Paths = () => {
           Aws-Devops
         </Link>
       </div>
-      <Outlet />
+      <Outlet />    // child larini bas demek
     </div>
   );
 };

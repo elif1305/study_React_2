@@ -13,13 +13,13 @@ const InstructorDetail = () => {
   // const location = useLocation();
   // const inst = location.state;
 
-  const [inst, setInst] = useState(null);
-  const [error, setError] = useState(false);
+  const [inst, setInst] = useState(null);     // null yazdik cunku error olmadiginda data is fetching i calistirmasi icin.
+  const [error, setError] = useState(false);              // hata mekanizmasi kurduk. bastan false kuruldu.
 
   useEffect(() => {
     fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
       .then((res) => {
-        if (!res.ok) {
+        if (!res.ok) {                              // res in oay olmasi icin, 200 ile 299 arasindaki hepsi ok dir.
           setError(true);
           throw new Error('Something went wrong');
         }
