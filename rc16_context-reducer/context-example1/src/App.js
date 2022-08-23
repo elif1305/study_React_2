@@ -26,3 +26,6 @@ function App() {
   );
 }
 export default App;
+
+
+// bir component hem local hem global sekilde veri kullanablir.

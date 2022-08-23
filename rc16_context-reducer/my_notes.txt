@@ -17,6 +17,7 @@ cantext API reactta varolandir, kuruluma geek yoktur.
 - global state ler cogalinca yonetimi contex ile zorlasiyor. 
 10-15 glabla state varsa redux tercih edilmeli.
 
+- contex daha pratik
 
 -neden kullanilmali?
 proplarin dagilimi bazen zorlasiyor
