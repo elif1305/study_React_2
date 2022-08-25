@@ -3,6 +3,8 @@ export const initialState = {
   dog: '',
   error: '',
 };
+// baslangic degerlerini yazdik
+
 
 
 // reducer yazilmasi best practisedir , degiseblir. ismi.

@@ -57,3 +57,7 @@ sx = {{background: 'grey', mt: 4 , border: '1px solid'}
 
 container sagdan soldan margin otomatik veren bi ozeillik oldugu icin kullanimi guzel
 
+-------------------
+
+componentlerde hangı ozellıklerın olup olmadıgnı kontrol etmek icin mui nin sitesinde o componentin oldugu sayfayi  ac, sayfanin en altinda API ozelliklerine tikla, hangi ozellilerin oldungunu kontrol edeblirsin.
+ornegin : mt yani margintop prop u hepsinde yok. kullanabilmk icin kontrol etmek gerekiyor. eger mt yoksa ve kullanmak istiyorsak sv ile kullanabliriz.

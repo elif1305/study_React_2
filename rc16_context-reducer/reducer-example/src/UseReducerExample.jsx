@@ -37,3 +37,6 @@ const UserReducerExample = () => {
 };
 
 export default UserReducerExample;
+
+// kullanmamiz gereken cok sayida state oldugu zaman hepsini tek bir elden kontrol etmemizi saglar
+// stateler grubu olarak
