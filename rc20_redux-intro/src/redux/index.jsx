@@ -31,11 +31,18 @@ import {createStore, combineReducers} from "redux";
 import counterReducer from "./reducers/counterReducer";
 import todoReducer from "./reducers/todoReducer";
 
+
+// her zaman tek bir store vardir, bir cok reducer olablir fakar butun bu reducerlar tek bir store da toplanir.
+// combine reducer bu islemi yapar. yani reducerlari birlestirir.
+// genelde rootReducer ismi verilir.
+//! step 1 " combine reducer altinda reducerlari toplar"
 const rootReducer = combineReducers({
     counterReducer: counterReducer,
     todoReducer: todoReducer,
 });
 
+// daha fazla reducuer da olablirdir. bizim ornegimimzde 2 tane reducer var.
+//! step 2 "birlesmis reducrdan tek bir store olustur"
 export const getStore = () => {
     const store = createStore(rootReducer);
     return store;

@@ -1,0 +1,17 @@
+redux : global state yonetim kutuphanesidir.
+gelistiriciis dan abramov
+ozellikle complex state yonetiminin oldugu uygulamalrda kullinimi tercih edileblir.
+
+1- createStore
+2-provider
+3- useSelector
+
+note: cok yani gereksiz kullanildiginda ekseseif render a sebep oldugu icin performansi dusuruoyr
+
+kurulumu:
+
+1- npm install redux react-redux
+
+yarn add redux react-redux 
+
+
