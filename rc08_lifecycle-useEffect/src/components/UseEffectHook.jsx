@@ -1,7 +1,7 @@
 //?========================================================
 //?                  USEEFFECT HOOK
 //?========================================================
-//! UseEffect Hook'u fonksiyonel componenler'te yan etkileri
+//! UseEffect Hook'u fonksiyonel componentler'te yan etkileri
 //! (side effect) gerceklestirmek icin kullanilir.
 //! componentDidMount,componentDidUpdate,ve componentWillUnmount
 //! metotlarinin bir birlesimi gibi dusunulebilir.
@@ -41,13 +41,17 @@ const UseEffectHook = () => {
   //   }, 3000);
   // },[]);
 
+
+  // componentDidUpdate tek basina calisacak sekilde yazilamior, bu nedenle didMount ile birlikte yaziliyor. 
   //! ComponentDidMount + componentDidUpdate
   // useEffect(() => {
   //   console.log('Mounted + Updated');
   //   setTimeout(() => {
   //     alert('Data Fetched');
   //   }, 1000);
-  // }, [count]);    // [] dependicy arrayi silersekte aynisi olur , yani mounted ve updated birlikte calisir.
+  // },[count] );    // [] dependicy arrayi silersekte aynisi olur , yani mounted ve updated birlikte calisir. countu takip et degistiginde tekrar calistir demek. count un yanina virgul koyularak baska degerlerde takip edileblir.
+                      // dependecny arrayin icine degismini takip etmek istediklerimizi yaziyoruz.
+
 
   //! ComponentDidMount + componentWillUnmount
   const fetchData = () => {
@@ -86,3 +90,15 @@ export default UseEffectHook;
 
 
 //! NOTE: mount sadece bir kez calisir.
+
+
+//* lifecycle in fonksiyonlarda useEffect ile kullanimi:
+useEffect(() => {
+  first
+  //componentDidMount + componentDidUpdate
+
+  return () => {
+    //componentWillUnmount
+    second
+  }
+}, [third])  // dependency array(update)
