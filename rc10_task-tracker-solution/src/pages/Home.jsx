@@ -6,9 +6,11 @@ import { useState, useEffect } from 'react';
 
 const Home = () => {
   const [tasks, setTasks] = useState(
-    JSON.parse(localStorage.getItem('tasks')) || []
+    JSON.parse(localStorage.getItem('tasks')) || []                // veriyi okuma, jsonda veri varsa al yoksa bos array dondur. bunu yapmazsak hata verir. cunku null olan bir seyi donduremez ve hata verir/
   );
 
+
+  // componentDidUpdate  : task her degistiginde bu degeri local e gondermek 
   useEffect(() => {
     localStorage.setItem('tasks', JSON.stringify(tasks));
   }, [tasks]);
