@@ -48,12 +48,12 @@ const Home = () => {
   //! Update (PUT:Whole Update,PATCH :Partially Update)
   const editTutorial = async (id, title, desc) => {
     const filtered = tutorials
-      .filter((tutor) => tutor.id === id)  // istedigimiz veriyi seciyor
+      .filter((tutor) => tutor.id === id)  // degisiklik yapmak istedigimiz veriyi seciyor, id si ile
       .map(() => ({ title: title, description: desc }));  // sectigimiz veride guncelleme / degisiklik yapmak icin
 
     console.log(filtered);
     try {
-      await axios.put(`${url}/${id}`, filtered[0]);
+      await axios.put(`${url}/${id}`, filtered[0]);   //degisikligi yapmak icin bize id lazim, yukaridaki filter bize array dondurdugu icin [0] yaparak ulasiyoruz
     } catch (error) {
       console.log(error);
     }
