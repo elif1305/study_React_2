@@ -2,7 +2,7 @@
    REACT
 ///////////////
 
-=>opensource tur.
+=> opensource tur.
 => node.js ders oncesi yuklenmeli.
 => githuba gonderilirken butun dosyalar gonderilmiyor.
 => react bir librarydir. framework diyenlerde var fakat js library sidir.
@@ -13,18 +13,20 @@ Framework : Komple bir sistemdir, ekosistemdir, bazı koşulları vardır. Bu fr
 Library: Örnek olarak react verebiliriz, JS library'dir. Onu alıp kullanabiliriz ve daha esnektir. Şartlarına zorlamıyor. Kullanırsan iyi olur der. 
 Harici kütüphaneler ile kullanılır daha çok. Örneğin, react rooter da kullanabiliriz başka bir harici kütüphanede.
 
-=> single page application dir.
+=> single page application dir.(aksi belirtilmedigi surece)
 => component base bi program
 => component: icinde html i css i ve js i var. tek element olusturuluyor.
 => LEGO mantigi dusunulebliri. kucuk birimlerden buyuk bir yapi olusturuluyor.
-=> https://reactjs.org/
+=> https://reactjs.org/     ==> official page
+
+=> react is a js library for building fast and interactive user interface.
 
 => ortayya cikis amaci : render sayisini azaltmak, sayfada her degisikilikte butun sayfanin her seferinde bastan render 
 edilmesi zaman alan bir durum , bunun onune gecmek icin
 => cok icerik varsa kullanimi hizlidir.
 => dezavantaji seo acisindan.indexleme acisindan.
 => en buyuk artisi render sayisni azaltip hizli olmasi.
-=> 2011 de facebook tarafindan gelistirildi.
+=> 2011 de facebook tarafindan gelistirildi.it was developed by facebook.
 => babeljs.io : eski surumere cevirmek icin kllanilan site. react bunu otomatik olarak yapiyor.
 
 => https://www-freecodecamp-org.cdn.ampproject.org/c/s/www.freecodecamp.org/news/top-javascript-concepts-to-know-before-learning-react/amp/
@@ -32,6 +34,17 @@ edilmesi zaman alan bir durum , bunun onune gecmek icin
 
 => react son yillarda cok populer ;
 => https://www.npmtrends.com/angular-vs-vue-vs-react
+=> Easy to read and understand views
+=> If your page uses a lot of fast updating data
+or real time data - React is the way to go
+
+Real DOM is slow but React uses
+Virtual and Virtual DOM and Virtual
+DOM is fast
+● Easy to understand what a
+component will render.
+● Easy to mix HTML and JS (JSX)
+● Uses full power of JS
 
 Reactta ;
 => html kodlari js icine direk olarak yazilir.(jsx)
@@ -44,6 +57,8 @@ react asil dom un bir kopyasini aliyor. bir guncelleme oldugunda o degisiminde k
 farklari bulup degismesi gerekenler hangileri ise sadece onlari asil dom da guncellior.
 React in arka planda hizli calismasini saglar.
 
+=> React only changes what needs to be changed!
+
 => en cok layout degisimleri(width,heightvb) rendering sayisini arttirir.
 
 => virtual dom musterinin yani bizim bilgisayarlarimizda tutulur.
@@ -54,7 +69,7 @@ degiskenlik varsa bunu bizim reacta bildirmemiz gerekir.(or: hookllar ile)
 =>REACT KURULUMU
 
 1- node.js indir ve kur
-node.js bir ortamdir. (envirenment)
+node.js bir ortamdir. reactin calistirilmasi icin. (envirenment)
 indirdikten sonra kontrol etmek icin, gitbash i ac, node -v yaz.
 => ilgili video ;
 https://www.youtube.com/watch?v=MjG-xWBZhTs
