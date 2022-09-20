@@ -35,6 +35,8 @@ const imgStyle = {
         style={imgStyle}
         src="https://cdn.pixabay.com/photo/2017/02/15/13/40/tulips-2068692__340.jpg" alt="img1" />
         {/* <img src={a} alt="img2" /> */}
+        <img src={a} alt="img2" />  
+        {/* img nin import edilmis olarak eklenmis hali */}
     </div>
   )
 }
