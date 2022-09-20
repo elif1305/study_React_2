@@ -9,7 +9,8 @@ function App() {
   return (
     <>
       <Header />
-      <Card data={data} /> // bu ornekte tum datayi gonderiyoruz.
+      <Card data={data} /> 
+      {/* bu ornekte tum datayi gonderiyoruz. */}
       <Footer />
     </>
   );
