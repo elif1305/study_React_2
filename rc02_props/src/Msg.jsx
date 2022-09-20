@@ -13,4 +13,4 @@ const Msg = (props) => {
 
 export default Msg;
 
-// props mantigi onenlidir, props drililng
+// props mantigi onenmmlidir, props drililng
