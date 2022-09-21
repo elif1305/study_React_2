@@ -20,7 +20,8 @@ const FormObject = () => {
 
   const handleSubmit = (e) => {
     // e.preventDefault();
-    const { username, password, email } = formValues;
+    const { username, password, email } = formValues;  //! desc.
+
     alert(`username:${username}
     email:${email}
     password:${password}
