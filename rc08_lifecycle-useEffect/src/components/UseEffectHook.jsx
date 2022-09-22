@@ -30,6 +30,8 @@ import { useState, useEffect } from 'react';
 //!   };
 //! }, [var1, var2]);
 
+//! once render sonra mounting calisir. yani once ekrana ne render edecegini yazar sonrasinda mounting yapilr.
+
 const UseEffectHook = () => {
   const [count, setCount] = useState(0);
 

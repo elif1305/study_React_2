@@ -13,8 +13,10 @@ function App() {
       </button> */}
 
       {/* Conditional Rendering (Short-Circuit) */}
-      {/* {show && <LifeCycleMethods />} */}
+      {/* {show && <LifeCycleMethods />}                  // show degeri true ise yanindakini calistir*/}
+      {/* {show || <LifeCycleMethods />}                         // show degeri false ise yanindakini calistir*/}   
       {/* {show ? <LifeCycleMethods /> : null}      -> TURNARY */} 
+      
       {/* {show && <UseEffectHook/>} */}
       <Users />
     </div>
