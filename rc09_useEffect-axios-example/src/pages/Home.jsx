@@ -6,10 +6,10 @@ import { useState, useEffect } from 'react';
 const Home = () => {
   const [tutorials, setTutorials] = useState();  //! hooklar yukari kisma yazilir.  //*(3) 
 
-  const url = 'https://tutorials-api-cw.herokuapp.com/api/tutorials';    //*(1)
+  const url = 'https://tutorials-api-cw.herokuapp.com/api/tutorials';    //!(1)
 
   //! GET (Read)
-  const getTutorials = async () => {    //*(2)
+  const getTutorials = async () => {    //!(2)
     try {      // Veriyi cekebliyorsan cek cekemiyorsan hata goster demek. (ONEMLI! KULLAN )
       const { data } = await axios.get(url);  // datanin parantez icinde yazilmasinin nedeni: ham datayi almak icin.array olarak ulasmak istedigimiz ham data verisi yukaridaki url ile cektigimiz datanin icindeki data isimli arrrayin icinde oldugu icin, parantez icinde yazarak destrc. yaptik ve [data] ya ulastik. veriyi aldik tamam ama guncel olarak degisebilecek bise oldugu icin state e atilmasi gerekir. 2. adim bu datayi state e atmak.
       setTutorials(data);
@@ -19,7 +19,7 @@ const Home = () => {
   };
 
   //? Sadece Component mount oldugunda istek yapar
-  useEffect(() => {    //*(4)    // surekli istek yapmasini engellemek icin bunu yapiyoruz.EZBERLE ONEMLI
+  useEffect(() => {    //!(4)    // surekli istek yapmasini engellemek icin bunu yapiyoruz.EZBERLE ONEMLI
     getTutorials();
   }, []);  //! buradai array in bos olmasi onemli.
 
@@ -65,7 +65,7 @@ const Home = () => {
       <AddTutorial addTutorial={addTutorial} />
       <TutorialList
         tutorials={tutorials}  // tutorials datasini tutorialsListe 'tutorials' key i olarak props olarak gonderiyoruz. bu sekilde gonderiyorsak yakalrken {} icinde (destc) yaparak yakalamak gerekir. yani : const TutorialList = ( {tutorials} ) 
-        // kisa yolu => {...tutorials} bu sekilde gonderirsek yakalarken {} kullanimina gerek yoktur. const TutorialList = ( tutorials )   seklinde yakalanabilir.
+        // kisa yolu => {...tutorials} bu sekilde(desc. yaparak)gonderirsek yakalarken {} kullanimina gerek yoktur. const TutorialList = ( tutorials ) icindekileri acarak id,title vs olarak   seklinde yakalanabilir.
         deleteTutorial={deleteTutorial}
         editTutorial={editTutorial}
       />
