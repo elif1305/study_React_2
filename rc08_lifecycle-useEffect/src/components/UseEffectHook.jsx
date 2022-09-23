@@ -44,7 +44,7 @@ const UseEffectHook = () => {
   // },[]);
 
 
-  // componentDidUpdate tek basina calisacak sekilde yazilamior, bu nedenle didMount ile birlikte yaziliyor. 
+  // componentDidUpdate tek basina calisacak sekilde yazilamiyor, bu nedenle didMount ile birlikte yaziliyor. 
   //! ComponentDidMount + componentDidUpdate
   // useEffect(() => {
   //   console.log('Mounted + Updated');

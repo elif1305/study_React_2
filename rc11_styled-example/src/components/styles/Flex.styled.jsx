@@ -4,7 +4,7 @@ const Flex = styled.div`
   display: flex;
   align-items: center;
   gap: 2rem;
-  & > div,
+  & > div,             // flexin icindeki tum div lere asagida yazilanlari uygula demek
   & > ul {
     /*!Tüm elemanların buyumesine izin ver*/
     flex-grow: 1;
