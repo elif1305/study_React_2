@@ -1,15 +1,18 @@
 import logo from '../img/logo.png';
 import { Link, NavLink } from 'react-router-dom';
 
-// Burada Navlink in import edilip kullanilmasinin amaci uzerine tiklandiginda aktiflik ozelligi var. bu nedenle avantajli
+// Burada Navlink in import edilip kullanilmasinin amaci uzerine tiklandiginda aktiflik ozelligi var. 
+// bu nedenle avantajli
 
 function Nav() {
   return (
     <nav className="navbar navbar-expand-md navbar-light">
       <div className="container-fluid">
+
         <Link to="/" className="navbar-brand">     // a tagi yerine link to yu kullan. 
           <img src={logo} alt="" />
         </Link>
+
         <button
           className="navbar-toggler"
           type="button"
@@ -18,8 +21,12 @@ function Nav() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
+
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
+
+        
           <ul className="navbar-nav ms-auto mb-2 me-3 mb-lg-0">
+
             <li className="nav-item">
               <NavLink
                 style={({ isActive }) => ({ color: isActive && 'red' })}
@@ -53,6 +60,7 @@ function Nav() {
                 Contact
               </NavLink>
             </li>
+
           </ul>
         </div>
       </div>

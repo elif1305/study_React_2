@@ -31,6 +31,9 @@ const Instructors = () => {
               // onClick={() => navigate(`/instructors/${id}`)}
               onClick={() => navigate(`/instructors/${id}`, { state: inst })}  //! step 3 cagir, step 4 app.js te
               style={{ cursor: 'pointer' }}
+
+              // instr bilgileribni bu sayfada cektigiiz icin direk buradan gonderebiliriz. { state: inst } ile inst 
+              // bilgilerini de gonderiyoruz. ve gonderdigimiz bu bilgileri use location ile yakalayabiliyoruz. 
             >
               <img
                 src={`https://avatars.dicebear.com/v2/avataaars/${id}.svg`}
