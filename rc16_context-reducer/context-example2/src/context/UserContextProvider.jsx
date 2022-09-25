@@ -31,7 +31,9 @@ const UserContextProvider = ({ children }) => {
   };
   const values = { users, changeWidth };
 
-  return <UserContext.Provider value={values}>{children}</UserContext.Provider>;
+  return <UserContext.Provider value={values}>
+    {children}
+    </UserContext.Provider>;
 };
 
 export default UserContextProvider;
