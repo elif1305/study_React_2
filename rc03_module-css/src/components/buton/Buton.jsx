@@ -23,4 +23,4 @@ export default Buton;
 //? 1- btn.css dosyasinin adini module.css olarak degistir.
 //* module.css unique className'ler ürettiği için istenmeyen stil ezilmeleri olmaz.
 //? 2- import btnStyle from './buton.module.css'; seklinde import et.
-//? 3- className ini  -> className={btnStyle["title"]}  seklinde yaz. 
+//? 3- className ini  -> className={btnStyle["title"]}  seklinde yaz. btnStyle ismini biz verdik baska birsey de olabilirdi.
