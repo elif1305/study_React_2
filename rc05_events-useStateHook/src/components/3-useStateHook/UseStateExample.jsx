@@ -27,6 +27,7 @@ const UseStateExample = () => {
   //?  1.si state degiskenidir.
   //?  2.si ise state'i degistirmeye izin veren bir setter metodudur.
   //? useState parametre olarak state'in ilk degerini alir.
+  
   const [count, setCount] = useState(0); //! array destruc., siranin onemi vardir. burada 0 initial degerdir.
   //! count(degisken) : state degiskeni , setCount : methodu (fonksiyon)
 

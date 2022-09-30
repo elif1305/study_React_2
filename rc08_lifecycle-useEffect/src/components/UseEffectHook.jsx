@@ -71,7 +71,7 @@ const UseEffectHook = () => {
     };
   }, []);
 
-  console.log('rendered');
+  // console.log('rendered');
   return (
 
     <div className="container text-center mt-4">
