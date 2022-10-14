@@ -19,7 +19,7 @@
 //* Bir component'in DOM agacindan kaldirilmasi sonrasi(componentWillUnmount)
 
 
-//? constructor kullanımı: 1- binding yapılacaksa constructor kullanılır, arrow funct. kullanıldıysa binding yapmaya
+//? constructor kullanımı(classlarda constructor kullanılır ): 1- binding yapılacaksa constructor kullanılır, arrow funct. kullanıldıysa binding yapmaya
 //? gerek kalmaz. 2- state e baslangıc degeri verilecegi zaman kullanilir.
 //! built in fonks kullanıyorsak binding yapmaya gerek kalmaz.
 
