@@ -3,6 +3,8 @@
 //?          https://reactjs.org/docs/react-component.html
 //?==================================================================
 
+// temelde 1- mounting 2- update(render,componentdidupdate) 3- willunmount
+
 //* Lifecycle metotlari componetnlerin DOM'da varoldugu sure boyunca
 //* uzerinde islem yapmamizi imkan saglayan ozel React mototlaridir.
 //* Ornegin bir component olsuturuldugunda, DOM'a basilsiginda,
@@ -16,12 +18,18 @@
 //* (Optional)Bir componentin guncellenmesinin sonrasi (componentDidUpdate)
 //* Bir component'in DOM agacindan kaldirilmasi sonrasi(componentWillUnmount)
 
+
+//? constructor kullanımı: 1- binding yapılacaksa constructor kullanılır, arrow funct. kullanıldıysa binding yapmaya
+//? gerek kalmaz. 2- state e baslangıc degeri verilecegi zaman kullanilir.
+//! built in fonks kullanıyorsak binding yapmaya gerek kalmaz.
+
+
 import React from 'react';
 
 class LifeCycleMethods extends React.Component {
   //! 1-) Bir componentin olsuturulmasinda cagrilir
   constructor(props) {
-    console.log('Contructor running');
+    console.log('Contructor running'); //numaralandırma calisma sirasina gore
     super(props);
     this.state = {
       count: 0,
@@ -47,6 +55,7 @@ class LifeCycleMethods extends React.Component {
   }
 
   //! 5-) Bir component DOM agacindan kaldiriltiktan hemen sonra cagirlir.
+  // fakat bunu kaldırmak istedigimiz component in parentinda yazmamiz gerekir.Bu ornekte app.js parent oldugu icin oraya yazildi.
   componentWillUnmount() {
     console.log('Unmounting');
   }
