@@ -5,28 +5,39 @@
 => opensource tur.
 => node.js ders oncesi yuklenmeli.
 => githuba gonderilirken butun dosyalar gonderilmiyor.
-=> react bir librarydir. framework diyenlerde var fakat js library sidir.
-=> “React is not opinionated, which means that it won’t force you to follow any specific design patterns, project organizational structure, or logic. It’s all up to you.
+=> “React is not opinionated, which means that it won’t force you to follow any 
+specific design patterns, project organizational structure, or logic. 
+It’s all up to you.
 => framework biselere zorlar kullanim acisindan , library de sana baglidir.
-=> 
-Framework : Komple bir sistemdir, ekosistemdir, bazı koşulları vardır. Bu framework'u kullanmak istiyorsak bu kurallara uymamız gerekiyor.
-Library: Örnek olarak react verebiliriz, JS library'dir. Onu alıp kullanabiliriz ve daha esnektir. Şartlarına zorlamıyor. Kullanırsan iyi olur der. 
-Harici kütüphaneler ile kullanılır daha çok. Örneğin, react rooter da kullanabiliriz başka bir harici kütüphanede.
-
+=> React is a JavaScript library for building user interfaces.
+=> React is a view layer library, not a framework like Angular etc.
 => single page application dir.(aksi belirtilmedigi surece)
 => component base bi program
 => component: icinde html i css i ve js i var. tek element olusturuluyor.
+=> Easy to read and understand views
+=> If your page uses a lot of fast updating data
+or real time data - React is the way to go
+
+Framework : Komple bir sistemdir, ekosistemdir, bazı koşulları vardır. 
+Bu framework'u kullanmak istiyorsak bu kurallara uymamız gerekiyor.
+Library: Örnek olarak react verebiliriz, JS library'dir. Onu alıp kullanabiliriz ve daha esnektir. 
+Şartlarına zorlamıyor. Kullanırsan iyi olur der. 
+Harici kütüphaneler ile kullanılır daha çok. Örneğin, react rooter da 
+kullanabiliriz başka bir harici kütüphanede.
+
+Declarative : React will efficiently update and render just the right components when your data changes.
+Declarative views make your code more predictable and easier to debug.
+
 => LEGO mantigi dusunulebliri. kucuk birimlerden buyuk bir yapi olusturuluyor.
 => https://reactjs.org/     ==> official page
 
-=> react is a js library for building fast and interactive user interface.
-
-=> ortayya cikis amaci : render sayisini azaltmak, sayfada her degisikilikte butun sayfanin her seferinde bastan render 
+=> ortayya cikis amaci : render sayisini azaltmak, sayfada her degisikilikte 
+butun sayfanin her seferinde bastan render 
 edilmesi zaman alan bir durum , bunun onune gecmek icin
 => cok icerik varsa kullanimi hizlidir.
 => dezavantaji seo acisindan.indexleme acisindan.
 => en buyuk artisi render sayisni azaltip hizli olmasi.
-=> 2011 de facebook tarafindan gelistirildi.it was developed by facebook.
+=> 2011 it was developed by facebook.
 => babeljs.io : eski surumere cevirmek icin kllanilan site. react bunu otomatik olarak yapiyor.
 
 => https://www-freecodecamp-org.cdn.ampproject.org/c/s/www.freecodecamp.org/news/top-javascript-concepts-to-know-before-learning-react/amp/
@@ -34,13 +45,10 @@ edilmesi zaman alan bir durum , bunun onune gecmek icin
 
 => react son yillarda cok populer ;
 => https://www.npmtrends.com/angular-vs-vue-vs-react
-=> Easy to read and understand views
-=> If your page uses a lot of fast updating data
-or real time data - React is the way to go
 
-Real DOM is slow but React uses
-Virtual and Virtual DOM and Virtual
-DOM is fast
+
+Real DOM is slow but React uses Virtual DOM and 
+Virtual DOM is fast
 ● Easy to understand what a
 component will render.
 ● Easy to mix HTML and JS (JSX)
@@ -56,6 +64,17 @@ Reactta ;
 react asil dom un bir kopyasini aliyor. bir guncelleme oldugunda o degisiminde kopyasini aliyor. sonra onceki kopya ile degisiklik olani kiyasliyor, 
 farklari bulup degismesi gerekenler hangileri ise sadece onlari asil dom da guncellior.
 React in arka planda hizli calismasini saglar.
+
+
+Gerçek DOM’a karşılık gelen sanal bir DOM nesnesidir, yani render edilen DOM’un bir kopyasıdır. 
+React her state değişikliğinde render edilen gerçek DOM’u bütünüyle tekrar oluşturmak yerine, state değişikliğini Virtual DOM’a yansıtmaktadır. 
+Bu sayede gerçek DOM ile ve yeni sanal(virtual) DOM arasındaki farklılıkları tespit ederek, 
+gerçek DOM’da yapılacak değişikleri hesaplar ve tek seferde sadece gerçek DOM’da değişen elemanları yeniden render eder. 
+Bu şekilde state her değiştiğinde ana DOM’un tüm elemanlarıyla yeniden oluşturulması maliyetinden korunulmuş ve azami performans
+iyileştirmesi sağlanmaktadır. Gerçek DOM render edildiğinde, virtual DOM ile eşittir. Virtual DOM’da bir değişiklik meydana geldiğinde, 
+gerçek DOM’a sadece değişikliğe konu alanlar yansıtılır ve her iki DOM tekrar birbirine eşitlenmiş olur. Aşağıdaki grafikte, 
+bu döngü anlatılmaya çalışılmaktadır. Yani kısaca senin DOM nesneleri tutuyor sonra senin yeni yaptığın değişiklikleri alıyor 
+sonra bu ikisini karşılaştırıyor ve değişen kısımları ekliyor bölylece performanstan kazanç sağlamış oluyoruz
 
 => React only changes what needs to be changed!
 
@@ -83,6 +102,19 @@ daha hizli.
 yarn i kurmak gerekir.
 cdm yi admin olarak ac ya da gitbash e,'npm i -g yarn' yaz.
 'yarn -v' yada 'yarn --version' ile kontrol et.
+
+=============
+Setup Development Environment
+● npm i -g create-react-app (once)
+● create-react-app is a project aimed at getting you up
+to speed with React in no time. It provides a ready-made
+React application starter, so you can dive into building your
+app without having to deal with Webpack and Babel
+configurations.
+==============
+
+extension : ES7 React/ Redux/ GraphQL/ React-Native 
+============
 
 PROJE BASLATMAK ICIN;
 
