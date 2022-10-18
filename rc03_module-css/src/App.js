@@ -5,7 +5,7 @@ function App() {
   // console.log(data);
   return (
     <>
-      {data.map((item) => {             // return un asagisi jsx tir. jsx e js kodu yazacaksak suslu parantez acilir.
+      {data.map((item) => {    // return un asagisi jsx tir. jsx e js kodu yazacaksak suslu parantez acilir.
         //!Destr
         const { id, img, btnName, dil } = item;
 

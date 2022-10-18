@@ -9,7 +9,8 @@
 //* class isimleri icin className kullanilir.
 //* Material UI, Styled Component, Sass, Bootstrap v.b harici kutuphaneler kullanilabilir.
 //?<img src="./hkj/jhk" alt="" /> // bu sekilde bir erisim olmuyor. yol verilmesi lazim.
-//? // ? Dahili bir resim eklemek icin import yapmak gereklidir. Dahili degilse, or: internetten direk aliniyorsa, https uzantisi src icine koyulur.
+//? // ? Dahili bir resim eklemek icin import yapmak gereklidir. 
+//? Dahili degilse, or: internetten direk aliniyorsa, https uzantisi src icine koyulur.
 
 
 

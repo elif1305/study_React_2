@@ -29,7 +29,8 @@ footer{
   height: calc(100vh - 267px);  
 }
 
-/* footeri en alta dayamak icin, ekranin tamamindan footer ve navin heightini cikardik.kalan contentin yuksekligi oldu.
+/* footeri en alta dayamak icin, ekranin tamamindan footer ve navin heightini cikardik.
+/* kalan contentin yuksekligi oldu.
 
 /*! CSS stillendirmeliri yaparken tüm bu stillendirmelerin
 /*! tek bir dosyada birlesecigini unutmamak gerekir. Parent'daki

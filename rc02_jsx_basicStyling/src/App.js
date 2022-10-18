@@ -11,10 +11,13 @@
 
 import Content from "./Content";
 import Footer from "./Footer";
-import Header from "./Header";   //? asagida div in icine eklerken , <hea.. diye yazmaya basladiginda alt kisimda cikiyor ona tikladiginda otomatik olarak importu buraya ekler.
+import Header from "./Header";   
+//? asagida div in icine eklerken , <hea.. diye yazmaya basladiginda 
+//? alt kisimda cikiyor ona tikladiginda otomatik olarak importu buraya ekler.
 
 //? App componentinin tanimlanmasi
-//! NOTE : div icerisinde olmasaydi asagiya h2 ile yazilan yazi hata verirdi. yani birden fazla element varsa div ile sarmallanmasi gerekir.
+//! NOTE : div icerisinde olmasaydi asagiya h2 ile yazilan yazi hata verirdi. 
+//! yani birden fazla element varsa div ile sarmallanmasi gerekir.
 function App() {
   return (  // returnden sonra parantez kullanmayacaksan hemen yanina yazmak gerekiyor. Parantez koyarak alt satira inileblir.
     //!JSX return un asagisi JSX tir.
