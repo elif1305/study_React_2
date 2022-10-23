@@ -27,6 +27,7 @@ class Counter extends Component {
     this.handleInc = this.handleInc.bind(this);
   }
 
+  //*bir metodun(fonksiyonun) class a baglanmasina binding denir.
   //* calismasi icin constructora baglanmasi gerekir.Yukarda baglandi.(arrow ile tanimlanirsa buna gerek kalmaz.)
   handleInc() {
     this.setState({

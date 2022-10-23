@@ -33,7 +33,9 @@ const Events = () => {
      
      
      {/* ORNEK 1 */}
-      {/* onclick prog.ni handleclick i tanimladik(baska bir seyde yazabilirz bize bagli buraya yazilacak isimyuruyerek ), fakat handleclick i tanimlamamaiz gerekiyor. burasi jsx alani. js alanina gecmemiz gerekiyor. yani return un ust kismi. */}
+      {/* onclick prog.ni handleclick i tanimladik(baska bir seyde yazabilirz bize bagli buraya yazilacak 
+        isimyuruyerek ), fakat handleclick i tanimlamamaiz gerekiyor. burasi jsx alani. js alanina gecmemiz 
+        gerekiyor. yani return un ust kismi. */}
       <button onClick={handleClick} className="btn btn-warning">      
         Click
       </button>
@@ -43,7 +45,8 @@ const Events = () => {
       {/* Eger bir event fonksiyonunun paremetresi olmasi gerkiyorsa
       bu fonksiyon bir arrow fonks. tarafindan  cagrilmalidir. Aksi
       takdirde event fonksiyonu event gerceklesmeden cagirilir */}
-      {/* paremetre olmasa da istenilirse hep arrow function yontemi kullanilablir.Yukardakinin ezberlenmesine gerek kalmaz */}
+      {/* paremetre olmasa da istenilirse hep arrow function yontemi kullanilablir.
+      Yukardakinin ezberlenmesine gerek kalmaz */}
       <button
         onClick={() => handleClear('Clear Btn pressed')}
         className="btn btn-dark"
