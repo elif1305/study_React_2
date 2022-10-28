@@ -21,7 +21,7 @@ const Home = () => {
   //? Sadece Component mount oldugunda istek yapar
   useEffect(() => {    //!(4)    // surekli istek yapmasini engellemek icin bunu yapiyoruz.EZBERLE ONEMLI
     getTutorials();
-  }, []);  //! buradai array in bos olmasi onemli.
+  }, []);  //! buradaki array in bos olmasi onemli.
 
   console.log(tutorials);
 
