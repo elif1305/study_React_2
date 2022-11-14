@@ -14,3 +14,102 @@ import styled from 'styled-components';
 
 -----------
 import { ThemeProvider } from 'styled-components';
+
+---------------------------------
+
+kendi dokumantosyou var : https://styled-components.com/docs/basics
+
+stillendirilmis componentler.
+js ortaminda css vari yazmamizi saglar.
+kebab-case seklinde yazilir.
+simple dynamic styling : stiliyle birlikte bir component olusuyor, dolayisiyla style sebebiyle olusacak olan render lari
+azaltmis oluruz.
+otomatik classname verilir. 
+
+1- npm install --save styled-components
+yarn add styled-components
+
+2- vscode-styled-components (vscode extension) eklenirse iyi olur.
+styled-snippets (vscode extension)
+
+3-or : Button.styled.jsx adinda bir dosya olustur ve ac.
+
+4- import styled from 'styled-components'   ekle.
+
+5- const Button = styled.button`
+    color : hot-pink;
+    //background: ${(props)=> (props.primary ? 'purple' : 'white')};
+    background: ${({primary})=> (primary ? 'purple' : 'white')};
+    cursor: pointer;
+    padding: 0.7rem 1.2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    font-family: 'tahoma'
+    &:hover{
+        transform: scale(0.97)
+    }
+
+`
+
+export default Button; 
+
+6- App.js de 
+import Button, {TomatoButton} from './jfksdjf/Button.styled';
+
+.
+.
+.
+
+<Button primary> Click </Button>
+<TomatoButton> Click <TomatoButton>
+
+
+
+==> uretilen butondan baska bi buton uretme:
+ export const TomatoButton = styled(Button)`         // yukardaki Buttonun butun ozelliklerini alir, ek olarak eklemek istdiklerimizi buraya yaziyoruz.
+    color: tomato;
+    background: white;
+ `
+
+
+
+ ==> birden fazla ozellik vermek icin:
+ or:
+
+ 1- Link.styled.jsx adinda bir dosya olustur ve ac.
+
+2- import styled, {css} from 'styled-component';
+
+ const StyledLink = styled.a`
+ font-size: 1rem;
+ color: white&:hover{
+        opacity: 0.5;
+ }
+${(props)=>                            // secondry propu varsa asagidaki ozellikleri ver demek.
+props.secondry &&
+css`                                       // css icinde vermek istedigimiz ozellikleri yaziyoruz.(import etmeyi unutma)
+    background-color: yellow;
+    padding: 0.2rem;    
+`}
+
+ `;
+
+ export default StyledLink;
+
+ 3- App.js de:
+
+ import StyledLink from './sdfafd/Link.styled';
+
+ const App = () => {
+    return(
+        <>
+        <StyledLink secondry href="www.google.com" target="_blank"> Google </StyledLink>
+        </>
+    )
+ }
+
+
+
+==> mesela header olusturacagiz.
+once Header.js diye componentini olustur(icine koyacagin buton,title,img vs leri koy),
+sonrasinda Header.styled.jsx ile olusturdugun Header.js i sarmalla.
