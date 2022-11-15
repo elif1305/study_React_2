@@ -56,7 +56,11 @@ useState --> dahili
 useEffect --> dahili
 useNavigate --> router-dom
 useLocation --> router-dom
+useParams  --> router-dom
 useContext --> dahili 
+useReducer--> dahili 
+useMemo--> dahili 
+useCallback--> dahili 
 
 ----------------------------
 
