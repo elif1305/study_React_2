@@ -61,19 +61,22 @@ Reactta ;
 => https://medium.com/@muratbalci1/virtual-dom-nedir-8e3c95dcde5c
 
 => virtual dom un calisma prensibi :
-react asil dom un bir kopyasini aliyor. bir guncelleme oldugunda o degisiminde kopyasini aliyor. sonra onceki kopya ile degisiklik olani kiyasliyor, 
+react asil dom un bir kopyasini aliyor. bir guncelleme oldugunda o degisiminde kopyasini aliyor. 
+sonra onceki kopya ile degisiklik olani kiyasliyor, 
 farklari bulup degismesi gerekenler hangileri ise sadece onlari asil dom da guncellior.
 React in arka planda hizli calismasini saglar.
 
 
 Gerçek DOM’a karşılık gelen sanal bir DOM nesnesidir, yani render edilen DOM’un bir kopyasıdır. 
-React her state değişikliğinde render edilen gerçek DOM’u bütünüyle tekrar oluşturmak yerine, state değişikliğini Virtual DOM’a yansıtmaktadır. 
+React her state değişikliğinde render edilen gerçek DOM’u bütünüyle tekrar oluşturmak yerine, 
+state değişikliğini Virtual DOM’a yansıtmaktadır. 
 Bu sayede gerçek DOM ile ve yeni sanal(virtual) DOM arasındaki farklılıkları tespit ederek, 
 gerçek DOM’da yapılacak değişikleri hesaplar ve tek seferde sadece gerçek DOM’da değişen elemanları yeniden render eder. 
 Bu şekilde state her değiştiğinde ana DOM’un tüm elemanlarıyla yeniden oluşturulması maliyetinden korunulmuş ve azami performans
-iyileştirmesi sağlanmaktadır. Gerçek DOM render edildiğinde, virtual DOM ile eşittir. Virtual DOM’da bir değişiklik meydana geldiğinde, 
-gerçek DOM’a sadece değişikliğe konu alanlar yansıtılır ve her iki DOM tekrar birbirine eşitlenmiş olur. Aşağıdaki grafikte, 
-bu döngü anlatılmaya çalışılmaktadır. Yani kısaca senin DOM nesneleri tutuyor sonra senin yeni yaptığın değişiklikleri alıyor 
+iyileştirmesi sağlanmaktadır. Gerçek DOM render edildiğinde, virtual DOM ile eşittir. 
+Virtual DOM’da bir değişiklik meydana geldiğinde, 
+gerçek DOM’a sadece değişikliğe konu alanlar yansıtılır ve her iki DOM tekrar birbirine eşitlenmiş olur. 
+Yani kısaca senin DOM nesneleri tutuyor sonra senin yeni yaptığın değişiklikleri alıyor 
 sonra bu ikisini karşılaştırıyor ve değişen kısımları ekliyor bölylece performanstan kazanç sağlamış oluyoruz
 
 => React only changes what needs to be changed!
