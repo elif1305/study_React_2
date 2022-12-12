@@ -2,6 +2,14 @@ cre////////////////
    REACT
 ///////////////
 
+projeye baslamak :
+
+istenilen dogrultuda plan cikar
+font family yildiz * yerine body ye verilirse ne olur?
+body e verilirse child lara ulasmiyor. her seye ulasmak istiyorsak yildiza verilmeli. daha kapsamli.
+
+
+
 => opensource tur.
 => node.js ders oncesi yuklenmeli.
 => githuba gonderilirken butun dosyalar gonderilmiyor.
